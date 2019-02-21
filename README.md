@@ -6,15 +6,8 @@ You'll need the following:
 * [Git](https://git-scm.com/downloads)
 * [Python](https://www.python.org/downloads/)
 
-## 1. Clone the sample app
+## 1. Clone or download this app
 
-Now you're ready to start working with the app. Clone the repo and change to the directory where the sample app is located.
-  ```
-git clone https://github.com/IBM-Cloud/get-started-python
-cd get-started-python
-  ```
-
-  Peruse the files in the *get-started-python* directory to familiarize yourself with the contents.
 
 ## 2. Run the app locally
 
