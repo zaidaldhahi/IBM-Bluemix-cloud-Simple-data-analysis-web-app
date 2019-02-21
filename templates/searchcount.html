@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block content %}
+
+        <table>
+            <tr>
+                <th>Number of Earthquakes</th>
+            </tr>
+
+            {% for row in row %}
+            <tr>
+                <td>
+                        {{row['1']}}
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+{% endblock content %}

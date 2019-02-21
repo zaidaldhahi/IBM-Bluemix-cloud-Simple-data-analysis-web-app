@@ -1,0 +1,45 @@
+{
+    "dashDB For Transactions": [
+        {
+            "credentials": {
+  "hostname": "dashdb-txn-sbox-yp-dal09-03.services.dal.bluemix.net",
+  "password": "9qtklgqd^0gg0bz0",
+  "https_url": "https://dashdb-txn-sbox-yp-dal09-03.services.dal.bluemix.net",
+  "port": 50000,
+  "ssldsn": "DATABASE=BLUDB;HOSTNAME=dashdb-txn-sbox-yp-dal09-03.services.dal.bluemix.net;PORT=50001;PROTOCOL=TCPIP;UID=xfc91170;PWD=9qtklgqd^0gg0bz0;Security=SSL;",
+  "host": "dashdb-txn-sbox-yp-dal09-03.services.dal.bluemix.net",
+  "jdbcurl": "jdbc:db2://dashdb-txn-sbox-yp-dal09-03.services.dal.bluemix.net:50000/BLUDB",
+  "uri": "db2://xfc91170:9qtklgqd%5E0gg0bz0@dashdb-txn-sbox-yp-dal09-03.services.dal.bluemix.net:50000/BLUDB",
+  "db": "BLUDB",
+  "dsn": "DATABASE=BLUDB;HOSTNAME=dashdb-txn-sbox-yp-dal09-03.services.dal.bluemix.net;PORT=50000;PROTOCOL=TCPIP;UID=xfc91170;PWD=9qtklgqd^0gg0bz0;",
+  "username": "xfc91170",
+  "ssljdbcurl": "jdbc:db2://dashdb-txn-sbox-yp-dal09-03.services.dal.bluemix.net:50001/BLUDB:sslConnection=true;"
+},
+            "syslog_drain_url": null,
+            "volume_mounts": [],
+            "label": "dashDB For Transactions",
+            "provider": null,
+            "plan": "Lite",
+            "name": "jaidb",
+            "tags": [
+                "big_data",
+                "ibm_created",
+                "db2",
+                "sqldb",
+                "purescale",
+                "sql",
+                "ibm_dedicated_public",
+                "db2 on cloud",
+                "db2oncloud",
+                "dash",
+                "dashdb",
+                "oracle",
+                "database",
+                "transactions",
+                "flex",
+                "dbaas",
+                "lite"
+            ]
+        }
+    ]
+}

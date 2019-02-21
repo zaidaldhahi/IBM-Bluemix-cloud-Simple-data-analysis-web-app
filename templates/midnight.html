@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block content %}
+
+        <table>
+            <tr>
+                <th>Number of Earthquakes at Night</th>
+                <th>Number of Earthquakes at Day</th>
+            </tr>
+
+
+                <tr>
+                    {% for row in row %}
+                        <td>
+                                {{row['1']}}
+                        </td>
+
+                        <td>
+                                {{row['2']}}
+                        </td>
+                    {% endfor %}
+                </tr>
+
+
+        </table>
+{% endblock content %}

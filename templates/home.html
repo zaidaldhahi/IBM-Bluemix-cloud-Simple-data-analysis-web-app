@@ -1,0 +1,104 @@
+{% extends "layout.html" %}
+{% block content %}
+
+		<center>
+        <fieldset>
+		<legend><h2>View Database</h2><br></legend>
+		<br>
+        <form method="POST" action="{{url_for('displayDB')}}" enctype="multipart/form-data">
+        <input type="submit" value="View Database">
+        </form><br>
+        </fieldset>
+
+
+        <fieldset>
+		<legend><h2>Search Magnitude</h2><br></legend>
+		<br>
+        <form method="POST" action="{{url_for('search')}}" enctype="multipart/form-data">
+        Enter a Magnitude: <input type="text" name="uname">
+        <input type="submit" value="Search">
+        </form><br>
+        </fieldset>
+
+
+        <fieldset>
+		<legend><h2>Search and Count Magnitudes Greater Than </h2><br></legend>
+		<br>
+        <form method="POST" action="{{url_for('searchcount')}}" enctype="multipart/form-data">
+        Enter a Magnitude: <input type="text" name="uname">
+        <input type="submit" value="Search">
+        </form><br>
+        </fieldset>
+
+
+        <fieldset>
+		<legend><h2>Search In Magnitude Range</h2><br></legend>
+		<br>
+        <form method="POST" action="{{url_for('searchinrange')}}" enctype="multipart/form-data">
+
+            <tr>
+                <td>
+                    Magnitude 1: <input type="text" name="magnitude1">
+                    Magnitude 2: <input type="text" name="magnitude2">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Date 1:<input type="date" name="date1">
+                    Date 2:<input type="date" name="date2">
+                </td>
+            </tr>
+
+        <input type="submit" value="Search">
+        </form><br><br>
+        </fieldset>
+
+
+        <fieldset>
+		<legend><h2>Search In Radius Range</h2><br></legend>
+		<br>
+        <form method="POST" action="{{url_for('searchinradius')}}" enctype="multipart/form-data">
+
+            <tr>
+                <td>
+                    Latitude: <input type="text" name="latitude">
+                    Longitude: <input type="text" name="longitude">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Radius: <input type="text" name="radius">
+                </td>
+            </tr>
+
+        <input type="submit" value="Search">
+        </form><br><br>
+        </fieldset>
+
+
+
+        <fieldset>
+		<legend><h2>Search In Magnitude Cluster</h2><br></legend>
+		<br>
+        <form method="POST" action="{{url_for('searchinmagintudeclusters')}}" enctype="multipart/form-data">
+
+            <tr>
+                <td>
+                    Magnitude: <input type="text" name="mag">
+                </td>
+            </tr>
+
+        <input type="submit" value="Search">
+        </form><br><br>
+        </fieldset>
+
+
+        <fieldset>
+		<legend><h2>Search And Count Night Events (Greater Than 5.0)</h2><br></legend>
+		<br>
+        <form method="POST" action="{{url_for('midnight')}}" enctype="multipart/form-data">
+        <input type="submit" value="Search">
+        </form>
+        </fieldset>
+
+{% endblock content %}
